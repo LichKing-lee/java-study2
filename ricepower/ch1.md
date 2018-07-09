@@ -14,9 +14,8 @@ public class Problem1 {
 ### Problem 02
 ```java
 public class Problem2 {
-
     public static final int ANGLE = 360;
-
+	
     public  static void main(String[] args) {
         int positiveAngle = 730;
         int negativeAngle = -50;
