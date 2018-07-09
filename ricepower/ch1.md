@@ -1,7 +1,8 @@
 ### Problem 01
 ```java
 public class Problem1 {
-    public static void main(String[] args) {
+    
+	public static void main(String[] args) {
         int number = 99;
 
         System.out.println("Binary : " + Integer.toBinaryString(number));
@@ -14,8 +15,9 @@ public class Problem1 {
 ### Problem 02
 ```java
 public class Problem2 {
-    public static final int ANGLE = 360;
-	
+    
+	public static final int ANGLE = 360;
+
     public  static void main(String[] args) {
         int positiveAngle = 730;
         int negativeAngle = -50;
