@@ -9,3 +9,6 @@
 - git push origin <branch-name> -> 로컬 레파지토리에 변경된 내용을 서버로 푸시합니다.
 - git fetch -> 서버에 변경된 내용들이 있는지 확인합니다.
 - git pull origin <branch-name> -> 특정 브랜치의 변경사항을 나의 로컬 레파지토리에 땡겨(pull)옵니다.
+
+### git 사용법 쉽게 풀어쓴곳
+- https://rogerdudler.github.io/git-guide/index.ko.html
