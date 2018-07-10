@@ -1,6 +1,6 @@
 P1
 
-```
+```java
 public class P1 {
 
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class P1 {
 
 P5
 
-```
+```java
 public class P5 {
 
     public static void main(String[] args) {
