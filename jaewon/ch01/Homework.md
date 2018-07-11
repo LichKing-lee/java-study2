@@ -81,6 +81,18 @@ public class P6 {
 ```
 
 ```java
+public class P10 {
+    public static void main(String[] args) {
+
+        Random rd = new Random();
+        long number = rd.nextLong();
+        System.out.println(Long.toString(number, 36));
+
+    }
+}
+```
+
+```java
 public class P13 {
 
     public static void main(String[] args) {
@@ -113,6 +125,29 @@ public class P13 {
 
         Collections.sort(al2);
         System.out.println(al2);
+    }
+}
+```
+
+```java
+public class P16 {
+
+    public static void main(String[] args) {
+
+        //average 메소드를 개선해서 적어도 한개 이상의 파라미터를 받아도 호출되게 해라
+        //jdk 1.5
+        average(2, 5, 3, 3);
+    }
+
+    public static void average(int... number) {
+
+        int sum = 0;
+        for (int array : number) {
+            sum += array;
+        }
+
+        System.out.println((double) sum / number.length);
+
     }
 }
 ```
