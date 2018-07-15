@@ -1,6 +1,6 @@
 - 자바스터디그룹 레파지토리입니다.
 - 스터디인원인데 권한이 없으면 저한테 말씀해주세요.
-
+- test
 # Getting Started
 - 폴더를 생성할 원하는 경로로 이동
 - git clone https://github.com/LichKing-lee/java-study2.git
