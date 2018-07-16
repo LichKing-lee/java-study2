@@ -66,3 +66,32 @@ static class Person {
 	}                                     
 }                                         
 ```
+
+### 향상된 for 문(enhanced for loop)
+- 향상된 for 문을 알고있고, 사용하는 분은 많지만 Iterable 인터페이스만 구현해주면 어떤 클래스든 사용할수있다는걸 모르는 분이 많음
+- 향상된 for 문은 내부적으로 Iterator를 돌리는 형태로 작동하기때문에 Iterator 객체를 리턴하는 Iterable 인터페이스만 구현해주면 어떤 클래스든 집어넣을 수 있음
+
+```
+static class Person implements Iterable<Person> {
+	private String name;                         
+                                                 
+	public Person(String name) {                 
+		this.name = name;                        
+	}                                            
+                                                 
+	public String getName() {                    
+		return name;                             
+	}                                            
+                                                 
+	public Person withName(String name) {        
+		return new Person(name);                 
+	}                                            
+                                                 
+	@Override                                    
+	public Iterator<Person> iterator() {         
+		return null;                             
+	}                                            
+}                                                
+```
+
+- 위 코드를 향상된 for 문에 넣고 돌리면 지금은 Null을 리턴하게했기때문에 예외가 발생합니다. 컴파일 에러가 나지않는것 정도만 확인할 수 있는 예제에요.
