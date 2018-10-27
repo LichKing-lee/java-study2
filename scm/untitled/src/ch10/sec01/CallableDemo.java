@@ -41,7 +41,10 @@ public class CallableDemo {
         for (Path p : paths) tasks.add(
                 () -> { return occurrences(word, p); });
         int processors = Runtime.getRuntime().availableProcessors();
+        System.out.println("processor:" + processors);
         ExecutorService executor = Executors.newFixedThreadPool(processors);
+        // task를 제출하면 Future를 얻는다.
+        // 모든 테스크가 완료될때까지 block한다.
         List<Future<Long>> results = executor.invokeAll(tasks);
         long total = 0;
         for (Future<Long> result : results) total += result.get();

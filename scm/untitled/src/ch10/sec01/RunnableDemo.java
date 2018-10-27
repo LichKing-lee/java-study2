@@ -16,6 +16,8 @@ public class RunnableDemo {
         };
 
         ExecutorService executor = Executors.newCachedThreadPool();
+        // Thread 갯수를 제한한다.
+        // Executors.newFixedThreadPool(2);
         executor.execute(hellos);
         executor.execute(goodbyes);
         executor.shutdown();
